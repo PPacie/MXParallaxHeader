@@ -1,3 +1,4 @@
+// swift-tools-version:5.1
 import PackageDescription
 
 let package = Package(
@@ -11,7 +12,5 @@ let package = Package(
         .target(
             name: "MXParallaxHeader"
         )
-    ],
-    swiftLanguageVersions: [.v5,.v4_2],
-    cLanguageStandard: .c11
+    ]
 )
