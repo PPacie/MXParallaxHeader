@@ -54,8 +54,8 @@
 
 /* Begin PBXFileReference section */
 		9C01BC6F1DA3E4D40032494C /* MXParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MXParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C01BC7B1DA3E55F0032494C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Framework/Info.plist; sourceTree = "<group>"; };
-		9C01BC7C1DA3E55F0032494C /* MXParallaxHeader-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MXParallaxHeader-umbrella.h"; path = "Framework/MXParallaxHeader-umbrella.h"; sourceTree = "<group>"; };
+		9C01BC7B1DA3E55F0032494C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C01BC7C1DA3E55F0032494C /* MXParallaxHeader-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-umbrella.h"; sourceTree = "<group>"; };
 		9C01BC801DA3E56A0032494C /* MXParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXParallaxHeader.h; sourceTree = "<group>"; };
 		9C01BC811DA3E56A0032494C /* MXParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXParallaxHeader.m; sourceTree = "<group>"; };
 		9C01BC821DA3E56A0032494C /* MXScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXScrollView.h; sourceTree = "<group>"; };
@@ -124,8 +124,6 @@
 		9C01BC7A1DA3E54C0032494C /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				9C01BC7B1DA3E55F0032494C /* Info.plist */,
-				9C01BC7C1DA3E55F0032494C /* MXParallaxHeader-umbrella.h */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -133,6 +131,8 @@
 		9C01BC7F1DA3E56A0032494C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9C01BC7B1DA3E55F0032494C /* Info.plist */,
+				9C01BC7C1DA3E55F0032494C /* MXParallaxHeader-umbrella.h */,
 				9C01BC801DA3E56A0032494C /* MXParallaxHeader.h */,
 				9C01BC811DA3E56A0032494C /* MXParallaxHeader.m */,
 				9C01BC821DA3E56A0032494C /* MXScrollView.h */,
@@ -479,7 +479,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Framework/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -503,7 +503,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Framework/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
